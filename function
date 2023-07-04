@@ -1,0 +1,23 @@
+#!/bin/bash
+function square(){
+    v1=$1
+    n=$(($v1*$v1))
+    echo $n
+}
+
+function expo(){
+    v1=$1
+    v2=$2
+    n=$(($v1**$v2))
+    echo $n
+}
+
+function factorial(){
+    v1=$1
+    n=1
+    while [[ $v1 -gt 0 ]]; do
+    n=$(($n*$v1))
+    v1=$(($v1 - 1))
+done
+    echo $n
+}
